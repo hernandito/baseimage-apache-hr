@@ -8,7 +8,7 @@ ENV BASE_APTLIST="apache2-mpm-worker libapache2-mod-fastcgi openssl php5 php5-cl
 RUN locale-gen en_US.UTF-8
 
 # install main packages
-RUN apt-get update -q && \
+RUN apt-get update -qy && \
 apt-get install $BASE_APTLIST -qy && \
 
 # cleanup 
