@@ -2,7 +2,7 @@ FROM linuxserver/baseimage
 MAINTAINER Sparklyballs <sparklyballs@linuxserver.io>
 
 # Set correct environment variables
-ENV BASE_APTLIST="apache2-mpm-worker libapache2-mod-fastcgi openssl php5 php5-cli php5-curl php5-fpm libapache2-mod-php5 wget mc inotify-tools php5-gd php5-sqlite php5-mcrypt php5-tidy php5-mysql libapache2-mod-proxy-html" LANG="en_US.UTF-8" LANGUAGE="en_US:en" LC_ALL="en_US.UTF-8"
+ENV BASE_APTLIST="apache2-mpm-worker nano libapache2-mod-fastcgi openssl php5 php5-cli php5-curl php5-fpm libapache2-mod-php5 wget mc inotify-tools php5-gd php5-sqlite php5-mcrypt php5-tidy php5-mysql libapache2-mod-proxy-html" LANG="en_US.UTF-8" LANGUAGE="en_US:en" LC_ALL="en_US.UTF-8"
 
 # Set the locale
 RUN locale-gen en_US.UTF-8
